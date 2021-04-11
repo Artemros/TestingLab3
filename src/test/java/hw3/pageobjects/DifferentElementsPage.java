@@ -25,10 +25,10 @@ public class DifferentElementsPage {
     List<WebElement> logs;
     @FindBy(xpath = "/html/body/div/div[2]/main/div[2]/div/div[4]/select/option[4]")
     WebElement yellow;
+
     public DifferentElementsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-
 
     public List<WebElement> getCheckboxList() {
         return checkboxList;
@@ -45,16 +45,20 @@ public class DifferentElementsPage {
     public List<WebElement> getDropdownList() {
         return dropdownList;
     }
-    public WebElement getLogSideBar(){
+
+    public WebElement getLogSideBar() {
         return logSideBar;
     }
-    public List<WebElement> getLogs(){
+
+    public List<WebElement> getLogs() {
         return logs;
     }
-    public WebElement getDropdown(){
+
+    public WebElement getDropdown() {
         return dropdown;
     }
-    public WebElement getYellow(){
+
+    public WebElement getYellow() {
         return yellow;
     }
 

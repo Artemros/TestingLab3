@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
 
 public class IndexPage {
     @FindBy(id = "user-icon")
@@ -21,16 +20,12 @@ public class IndexPage {
     WebElement userPassword;
     @FindBy(id = "login-button")
     WebElement loginButton;
-    //    @FindBy(xpath = "//*[contains(@class,'benefit-icon')]")
-//    WebElement images;
     @FindBy(xpath = "/html/body/div/div[2]/main/div[2]/h3[1]")
     WebElement text1;
     @FindBy(xpath = "/html/body/div/div[2]/main/div[2]/p")
     WebElement text2;
     @FindBy(xpath = "/html/body/div/div[2]/main/div[2]/h3[2]")
     WebElement textCenter;
-    //    @FindBy(tagName = "iframe")
-//    WebElement iframe;
     @FindBy(tagName = "footer")
     WebElement footer;
     @FindBy(xpath = "//*[contains(@class,'benefit-icon')]")
@@ -48,7 +43,7 @@ public class IndexPage {
 
 
     public IndexPage(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
     public void login(String name, String password) {
@@ -121,7 +116,4 @@ public class IndexPage {
         }
         return serviceMenu;
     }
-//    public WebElement getIframe(){
-//        return iframe;
-//    }
 }

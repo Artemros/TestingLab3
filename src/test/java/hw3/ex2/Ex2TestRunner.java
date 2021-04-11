@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
         features = {"src/test/resources/Ex2_scenario.feature"},
         glue = {"hw3.ex2steps"}
 )
-public class Ex2TestRunner extends AbstractTestNGCucumberTests{
+public class Ex2TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
     @DataProvider()

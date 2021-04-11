@@ -26,7 +26,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Ex1Steps {
-    WebDriver driver;
+    private WebDriver driver;
     private IndexPage indexPage;
     private CommonElements commonElements;
     private Properties properties;

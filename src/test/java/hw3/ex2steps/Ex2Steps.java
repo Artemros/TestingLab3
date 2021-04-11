@@ -12,13 +12,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.asserts.SoftAssert;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -29,7 +27,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Ex2Steps {
-    WebDriver driver;
+    private WebDriver driver;
     private IndexPage indexPage;
     private DifferentElementsPage differentElementsPage;
     private CommonElements commonElements;

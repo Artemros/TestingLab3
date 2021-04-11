@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CommonElements {
     @FindBy(id = "mCSB_1")
@@ -26,12 +25,15 @@ public class CommonElements {
     public WebElement getLeftSection() {
         return leftSection;
     }
+
     public WebElement getService() {
         return service;
     }
+
     public WebElement getDifferentElementsPage() {
         return differentElementsPage;
     }
+
     public WebElement getTopSection() {
         return topSection;
     }
