@@ -3,3 +3,4 @@
 .idea/
 *.iml
 /src/test/resources/chromedriver.exe
+/allure-results/
